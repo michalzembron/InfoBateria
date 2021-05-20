@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">InfoBateria</string>
+    <string name="informacje_o_baterii">Informacje o baterii</string>
+    <string name="poziom_na_adowania">Poziom naładowania:</string>
+    <string name="stan">Stan:</string>
+    <string name="zrodlo_zasilania">Źródło zasilania:</string>
+    <string name="dost_pna">Dostępna ?:</string>
+    <string name="poziom">Poziom:</string>
+    <string name="technologia">Technologia:</string>
+    <string name="temperatura">Temperatura:</string>
+    <string name="nan">NaN</string>
+    <string name="napiecie">Napięcie:</string>
+</resources>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/informacje_o_baterii"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar_batteryChargeLevel"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/tv_batteryChargeLevelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/poziom_na_adowania"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar_batteryChargeLevel" />
+
+    <TextView
+        android:id="@+id/tv_batteryChargeLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nan"
+        app:layout_constraintStart_toEndOf="@+id/tv_batteryChargeLevelText"
+        app:layout_constraintTop_toTopOf="@+id/tv_batteryChargeLevelText"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_batteryConditionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/stan"
+        app:layout_constraintStart_toStartOf="@+id/tv_batteryChargeLevelText"
+        app:layout_constraintTop_toBottomOf="@+id/tv_batteryChargeLevelText" />
+
+    <TextView
+        android:id="@+id/tv_batteryCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/nan"
+        app:layout_constraintStart_toEndOf="@+id/tv_batteryConditionText"
+        app:layout_constraintTop_toTopOf="@+id/tv_batteryConditionText" />
+
+    <TextView
+        android:id="@+id/tv_batterySourceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/zrodlo_zasilania"
+        app:layout_constraintStart_toStartOf="@+id/tv_batteryConditionText"
+        app:layout_constraintTop_toBottomOf="@+id/tv_batteryConditionText" />
+
+    <TextView
+        android:id="@+id/tv_batterySource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/nan"
+        app:layout_constraintStart_toEndOf="@+id/tv_batterySourceText"
+        app:layout_constraintTop_toTopOf="@+id/tv_batterySourceText" />
+
+    <TextView
+        android:id="@+id/tv_batteryAvailableText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/dost_pna"
+        app:layout_constraintStart_toStartOf="@+id/tv_batterySourceText"
+        app:layout_constraintTop_toBottomOf="@+id/tv_batterySourceText" />
+
+    <TextView
+        android:id="@+id/tv_batteryAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/nan"
+        app:layout_constraintStart_toEndOf="@+id/tv_batteryAvailableText"
+        app:layout_constraintTop_toTopOf="@+id/tv_batteryAvailableText" />
+
+    <TextView
+        android:id="@+id/tv_batteryLevelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/poziom"
+        app:layout_constraintStart_toStartOf="@+id/tv_batteryAvailableText"
+        app:layout_constraintTop_toBottomOf="@+id/tv_batteryAvailableText" />
+
+    <TextView
+        android:id="@+id/tv_batteryLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/nan"
+        app:layout_constraintStart_toEndOf="@+id/tv_batteryLevelText"
+        app:layout_constraintTop_toTopOf="@+id/tv_batteryLevelText" />
+
+    <TextView
+        android:id="@+id/tv_batteryStatusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/stan"
+        app:layout_constraintStart_toStartOf="@+id/tv_batteryLevelText"
+        app:layout_constraintTop_toBottomOf="@+id/tv_batteryLevelText" />
+
+    <TextView
+        android:id="@+id/tv_batteryStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/nan"
+        app:layout_constraintStart_toEndOf="@+id/tv_batteryStatusText"
+        app:layout_constraintTop_toTopOf="@+id/tv_batteryStatusText" />
+
+    <TextView
+        android:id="@+id/tv_batteryTechnologyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/technologia"
+        app:layout_constraintStart_toStartOf="@+id/tv_batteryStatusText"
+        app:layout_constraintTop_toBottomOf="@+id/tv_batteryStatusText" />
+
+    <TextView
+        android:id="@+id/tv_batteryTechnology"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/nan"
+        app:layout_constraintStart_toEndOf="@+id/tv_batteryTechnologyText"
+        app:layout_constraintTop_toTopOf="@+id/tv_batteryTechnologyText" />
+
+    <TextView
+        android:id="@+id/tv_batteryTempText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/temperatura"
+        app:layout_constraintStart_toStartOf="@+id/tv_batteryTechnologyText"
+        app:layout_constraintTop_toBottomOf="@+id/tv_batteryTechnologyText" />
+
+    <TextView
+        android:id="@+id/tv_batteryTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/nan"
+        app:layout_constraintStart_toEndOf="@+id/tv_batteryTempText"
+        app:layout_constraintTop_toTopOf="@+id/tv_batteryTempText" />
+
+    <TextView
+        android:id="@+id/tv_batteryVoltageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/napiecie"
+        app:layout_constraintStart_toStartOf="@+id/tv_batteryTempText"
+        app:layout_constraintTop_toBottomOf="@+id/tv_batteryTempText" />
+
+    <TextView
+        android:id="@+id/tv_batteryVoltage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/nan"
+        app:layout_constraintStart_toEndOf="@+id/tv_batteryVoltageText"
+        app:layout_constraintTop_toTopOf="@+id/tv_batteryVoltageText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
